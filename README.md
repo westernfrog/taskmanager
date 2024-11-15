@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Task Manager
 
-## Getting Started
+This application is a simple task manager built using **Next.js** and **React**, providing users with functionality to add, search, delete, mark tasks as complete or incomplete, and sort tasks. This readme will guide you through understanding the application, setting it up, and the key design assumptions made during development.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. [Features](#features)
+2. [Setup and Launch](#setup-and-launch)
+3. [Development Assumptions](#development-assumptions)
+4. [Screenshots](#screenshots)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The Task Manager application offers the following functionalities:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Add Task**: Users can create new tasks with attributes such as title, description, priority, and completion status.
+- **Search and Filter**: Users can search for tasks based on their title.
+- **Task Completion**: Users can mark tasks as complete or incomplete.
+- **Delete Task**: Unwanted tasks can be deleted.
+- **Sort Tasks**: Users can sort tasks based on priority and completion status (implementation provided in the sorting functionality).
 
-## Learn More
+## Setup and Launch
 
-To learn more about Next.js, take a look at the following resources:
+Follow these steps to set up and run the project:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repository**:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   git clone <repository-url>
+   cd task-manager
+   ```
 
-## Deploy on Vercel
+2. **Install Dependencies**:
+   Install the required packages using npm or yarn.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Run the Application**:
+   Start the development server.
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Access the Application**:
+   The application will be available at `http://localhost:3000`.
+
+5. **Saving Data**:
+   Tasks are stored in `localStorage` so that they persist across page reloads, though they will be cleared when the user clears browser data.
+
+## Development Assumptions
+
+The following assumptions were made during the development of this task manager:
+
+1. **Task Attributes**: Each task has a title, description, priority (high, medium, or low), and completion status.
+2. **Local Storage**: All tasks are stored locally in the browser using `localStorage`. This makes it easy to retain tasks between sessions on the same device.
+3. **No Backend**: Since this is a simple task manager application, no backend is required. All data is handled client-side.
+4. **Sorting Criteria**: Tasks can be sorted based on priority (high to low) and completion status.
+
+## Screenshots
+
+1. **Homepage**:
+   ![Homepage](./screenshots/homepage.png)
+
+2. **Adding a Task**:
+   ![Adding Task](./screenshots/add-task.png)
+
+3. **Task Options Menu**:
+   ![Options Menu](./screenshots/options-menu.png)
