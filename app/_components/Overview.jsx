@@ -159,13 +159,13 @@ export default function Overview() {
                 <div className="flex items-center gap-4">
                   <FlagTriangleRightIcon size={18} />
                   <h3
-                    className={`text-${
+                    className={`${
                       task.priority === "high"
-                        ? "purple"
+                        ? "text-purple-500"
                         : task.priority === "mid"
-                        ? "amber"
-                        : "pink"
-                    }-500 font-bold drop-shadow-lg`}
+                        ? "text-amber-500"
+                        : "text-pink-500"
+                    } font-bold drop-shadow-lg`}
                   >
                     <span className="uppercase">{task.priority}</span> Priority
                   </h3>
