@@ -60,12 +60,7 @@ The following assumptions were made during the development of this task manager:
 4. **Sorting Criteria**: Tasks can be sorted based on priority (high to low) and completion status.
 
 ## Screenshots
+![image](https://github.com/user-attachments/assets/25744ed1-92e2-41e3-8e9e-798787422909)
 
-1. **Homepage**:
-   ![Homepage](./screenshots/homepage.png)
+![image](https://github.com/user-attachments/assets/f8e1f2b5-8fd0-4b64-96a6-54b9c9ce4eb5)
 
-2. **Adding a Task**:
-   ![Adding Task](./screenshots/add-task.png)
-
-3. **Task Options Menu**:
-   ![Options Menu](./screenshots/options-menu.png)
